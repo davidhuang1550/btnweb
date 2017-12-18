@@ -1,0 +1,31 @@
+<html>
+<head>
+
+</head>
+
+<body>
+    <div id="container">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="password">
+        <button type="button" id="login">Login</button>
+        <h2 id="IsCorrect" hidden>Wrong password </h2>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAbZgeDfgHu596yY6RmAfGo_rbmjhRlc6E",
+        authDomain: "btnwebproj.firebaseapp.com",
+        databaseURL: "https://btnwebproj.firebaseio.com",
+        projectId: "btnwebproj",
+        storageBucket: "",
+        messagingSenderId: "404396852135"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
